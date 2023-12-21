@@ -10,6 +10,7 @@ type Props = {
 
 async function CreatorPage({params: {username}}: Props) {
   const externalUser = await currentUser();
+
   const user = await getUserByUsername(username);
 
   if (!user || user.externalUserId !== externalUser?.id || !user.stream) {

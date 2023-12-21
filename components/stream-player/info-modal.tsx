@@ -58,7 +58,7 @@ function InfoModal({initialName, initialThumbnailUrl}: Props) {
           setThumbnailUrl("");
           closeRef?.current?.click();
         })
-        .catch(() => console.log(`Something went wrong`));
+        .catch(() => toast.error(`Something went wrong`));
     });
   };
   return (

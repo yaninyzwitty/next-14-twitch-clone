@@ -2,6 +2,7 @@ import {getSearch} from "@/lib/search-service";
 import React from "react";
 import ResultCard, {ResultCardSkeleton} from "./result-card";
 import {Skeleton} from "@/components/ui/skeleton";
+import {auth} from "@clerk/nextjs";
 
 type Props = {
   term?: string;
